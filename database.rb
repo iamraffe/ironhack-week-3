@@ -1,5 +1,3 @@
-require 'imdb'
-
 class Database
 	def initialize(db = 'movies.txt')
 		@db = db
