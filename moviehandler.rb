@@ -5,7 +5,7 @@ class MovieHandler
 	end
 
 	def check_with_imdb(movies)
-		imdb_response = movies.map{|movie_name| {movie: movie_name, rating:Imdb::Search.new(movie_name).movies[0].rating}}
+		imdb_response = movies.map{|movie_name| {name: movie_name, rating:Imdb::Search.new(movie_name).movies[0].rating}}
 	end
 
 	def get_ratings
