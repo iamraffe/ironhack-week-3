@@ -5,7 +5,7 @@ class Database
 		@db = db
 	end
 
-	def all
+	def retrieve_all
 		file_contents_array = IO.read(@db).split(/\r?\n/)
 	end
 end
